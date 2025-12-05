@@ -20,7 +20,7 @@ trait PostPresenter
     {
         $featured_image = $value;
 
-        if (Str::startsWith($featured_image, 'https://picsum.photos')) {
+        if (Str::startsWith($featured_image, 'https://placedog.net')) {
             $return_text = $featured_image.'?random='.$this->id;
         } else {
             $return_text = $featured_image;
