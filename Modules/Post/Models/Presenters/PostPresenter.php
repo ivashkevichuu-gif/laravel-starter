@@ -99,7 +99,7 @@ trait PostPresenter
         $this->attributes['created_by_name'] = trim(label_case($value));
 
         if (empty($value)) {
-            $this->attributes['created_by_name'] = Auth::user()->name;
+            $this->attributes['created_by_name'] = Auth::user()->name ?? 'System';
         }
     }
 
